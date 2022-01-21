@@ -1,0 +1,102 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/montserrat-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/nunito-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/nunito-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-700 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/nunito-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/nunito-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    font-family: nunito, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #333333;
+}
+
+h1 {
+    font-family: monsterrat, sans-serif;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.2;
+    color: #181818;
+}
+
+h1 span{
+    font-family: monsterrat, sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: monsterrat, sans-serif;
+    font-weight: 400;
+    font-size: 5.4rem;
+    line-height: 1.2;
+    color: #181818;
+}
+
+h2 span {
+    font-family: monsterrat, sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: monsterrat, sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #181818;
+}
+
+p {
+    font-family: nunito, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.process-item p {
+    font-family: nunito, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.sous-titre-color{
+    color: #E95841;
+}
+
+.button-color {
+    color: #ffffff;
+    background-color: #E95841;
+}
