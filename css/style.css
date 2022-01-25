@@ -371,3 +371,17 @@ figure img {
 .process-item span {
     color: var(--accent-color);
 }
+
+/*work*/
+
+.work-connect {
+    background-color: var(--general-color);
+    padding-bottom: 16rem;
+    
+}
+
+.work-connect .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
