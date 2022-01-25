@@ -57,10 +57,11 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: var(--text-color-black);
+    
 }
 
 h1 {
-    font-family: monsterrat, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 6.4rem;
     line-height: 1.2;
@@ -68,12 +69,11 @@ h1 {
 }
 
 h1 span{
-    font-family: monsterrat, sans-serif;
     font-weight: 700;
 }
 
 h2 {
-    font-family: monsterrat, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 400;
     font-size: 5.4rem;
     line-height: 1.2;
@@ -81,30 +81,38 @@ h2 {
 }
 
 h2 span {
-    font-family: monsterrat, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 700;
 }
 
 h3 {
-    font-family: monsterrat, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 1.2;
-    color: var(--tilte-color)
+    color: var(--tilte-color);
+    padding-bottom: 2.3rem;
 }
 
 p {
-    font-family: nunito, sans-serif;
+    
     font-size: 1.8rem;
     line-height: 1.6;
     color: var(--text-color-black);
 }
 
 .process-item p {
-    font-family: nunito, sans-serif;
     font-size: 1.4rem;
     line-height: 1.7;
     color: #333333;
+}
+
+.sous-tilte {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 1.8;
+    color: var(--accent-color);
+    padding-bottom: 0.6rem;
 }
 
 /*Layout*/
@@ -130,10 +138,13 @@ p {
     display: flex;
     justify-content: space-between;
     font-size: 1.8rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .main-content{
     background-color: var(--grey-light);
 }
+
 .logo {
     display: flex;
 }
@@ -143,13 +154,20 @@ p {
 .menu {
     display: flex;
     gap: 2.5rem;
+    flex-wrap: wrap;
+    
 }
 
 .menu-item {
     display:flex;
     font-weight: 700;
-    gap: 2.5rem;
-    
+    flex-wrap: wrap;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 a {
@@ -181,6 +199,22 @@ a {
 .link-list {
     display: flex;
     gap: 1.6rem;
+    padding-top: 3.4rem;
+    transition: .3s;
+}
+
+.link-item-1:hover,
+.link-item-1:focus {
+    background-color: var(--general-color);
+    color: var(--accent-color);
+    transition: .3s;
+}
+
+.link-item-2:hover,
+.link-item-2:focus {
+    background-color: var(--accent-color);
+    color: var(--general-color);
+    transition: .3s;
 }
 
 .link-item-1 {
@@ -215,12 +249,125 @@ a {
     
 }
 
-.text .picture{
+.hero .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.8rem;
+}
+
+.picture figure{
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    border-radius: 2rem;
 }
 
 .social-list {
     display: flex;
     gap: 2.6rem;
+    padding-top: 6rem;
+    justify-content: center;
+}
+
+.social-item{
+    width: 2.6rem;
+    height: 2.6rem;
+    opacity: 0.5;
+}
+
+/*UX design*/
+
+.ux-content {
+    background-color: var(--general-color);
+    padding-top: 5.6rem;
+    padding-bottom: 11.2rem;
+}
+
+.ux-content .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8rem;
+}
+
+.ux-content h2 {
+    padding-bottom: 2.7rem;
+} 
+
+/*data */
+
+.data-content {
+    background-color: var(--general-color);
+    padding-bottom: 11.2rem;
+}
+
+.data-content .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8rem;
+    
+}
+
+.data-content h2 {
+    padding-bottom: 2.7rem;
+} 
+
+.left-picture {
+    order: -1;
+}
+
+.right-text {
+    padding-left: 12.1rem;
+}
+
+/*front*/
+
+.front-content {
+    background-color: var(--general-color);
+    padding-bottom: 11.2rem;
+}
+
+.front-content .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8rem;
+}
+
+.front-content h2 {
+    padding-bottom: 2.7rem;
+} 
+
+/* Création */
+
+.creation-content {
+    background-color: var(--general-color);
+    padding-bottom: 11.2rem;
+}
+
+.creation-content .container h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.creation-content .sous-tilte {
+    display: flex;
+    justify-content: center;
+}
+
+.creation-content ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.8rem;
+}
+
+.process-item {
+    background-color: var(--text-color);
+    padding: 3.3rem;
+    text-align: center;  
+}
+
+.process-item span {
+    color: var(--accent-color);
 }
