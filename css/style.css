@@ -377,11 +377,66 @@ figure img {
 .work-connect {
     background-color: var(--general-color);
     padding-bottom: 16rem;
-    
+    margin-bottom: 4.2rem;
 }
 
 .work-connect .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+.left-part > .social-list {
+    padding-top: 2.7rem;
+    justify-content: flex-start;
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 700;
+    padding-bottom: 1.4rem;
+    padding-top: 2.4rem;
+}
+
+input {
+    border: 0;
+}
+
+#tell-me {
+    padding-bottom: 16rem;
+}
+
+input > .link-item-1 {
+    counter-reset: var(--text-color);
+    
+}
+
+/* Footer*/
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 47.4rem;
+}
+
+.main-footer .logo {
+    display: block;
+    font-family: montserrat, sans-serif; 
+    
+}
+
+.francois-footer{    
+    font-size: 3.7rem;
+}
+
+.main-footer p span{   
+    font-weight: 700;
+}
+
+.text-footer {
+    margin-left: 0;
+    
+}
