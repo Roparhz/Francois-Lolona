@@ -54,18 +54,23 @@
 body {
     font-family: nunito, sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.7;
+    font-size: 1.8rem;
+    line-height: 1.6;
     color: var(--text-color-black);
-    
+    background-color: var(--general-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    color: var(--tilte-color);
 }
 
 h1 {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
     font-size: 6.4rem;
     line-height: 1.2;
-    color: var(--tilte-color);
 }
 
 h1 span{
@@ -73,11 +78,8 @@ h1 span{
 }
 
 h2 {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
     font-size: 5.4rem;
     line-height: 1.2;
-    color: var(--tilte-color)
 }
 
 h2 span {
@@ -86,19 +88,18 @@ h2 span {
 }
 
 h3 {
-    font-family: montserrat, sans-serif;
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 1.2;
-    color: var(--tilte-color);
     padding-bottom: 2.3rem;
 }
 
 p {
-    
     font-size: 1.8rem;
-    line-height: 1.6;
-    color: var(--text-color-black);
+}
+
+li > a {
+    text-decoration: none;
 }
 
 .process-item p {
@@ -155,7 +156,6 @@ p {
     display: flex;
     gap: 2.5rem;
     flex-wrap: wrap;
-    
 }
 
 .menu-item {
@@ -164,15 +164,36 @@ p {
     flex-wrap: wrap;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-
-a {
+.menu-link {
     text-decoration: none;
     color: var(--text-color-black);
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border: .2rem solid var(--accent-color);
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .3s;
+}
+
+.underline:hover::before,
+.underline:focus::before {
+    visibility: visible;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color)
 }
 
 /* Hero */
@@ -180,8 +201,6 @@ a {
 .hero {
     padding-top: 8.1rem;
     padding-bottom: 14.7rem;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
 }
 
 .hr-line {
@@ -203,6 +222,7 @@ a {
     transition: .3s;
 }
 
+
 .link-item-1:hover,
 .link-item-1:focus {
     background-color: var(--general-color);
@@ -215,6 +235,15 @@ a {
     background-color: var(--accent-color);
     color: var(--general-color);
     transition: .3s;
+}
+.link-item-1:hover a,
+.link-item-1:hover a {
+    color: var(--accent-color);
+
+}
+.link-item-2:hover a,
+.link-item-2:hover {
+    color: var(--text-color);
 }
 
 .link-item-1 {
@@ -246,7 +275,6 @@ a {
 .link-item-2 a{
     color: var(--accent-color);
     font-size: 1.4rem;
-    
 }
 
 .hero .container{
@@ -262,12 +290,12 @@ a {
 
 figure img {
     border-radius: 2rem;
+    margin-bottom: 6rem;
 }
 
 .social-list {
     display: flex;
     gap: 2.6rem;
-    padding-top: 6rem;
     justify-content: center;
 }
 
@@ -306,7 +334,6 @@ figure img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.8rem;
-    
 }
 
 .data-content h2 {
@@ -409,9 +436,22 @@ input {
     padding-bottom: 16rem;
 }
 
-input > .link-item-1 {
-    counter-reset: var(--text-color);
-    
+.btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    width: 16.8rem;
+    height: 4.5rem;
+    margin-top: 4rem;
+    border: 0;
+    border-radius: 5rem;
+    transition: .3s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--text-color);
+    color:var(--accent-color);
+    transition: .3s;
 }
 
 /* Footer*/
@@ -419,15 +459,29 @@ input > .link-item-1 {
 .main-footer .container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 47.4rem;
-}
-
-.main-footer .logo {
-    display: block;
-    font-family: montserrat, sans-serif; 
+    align-items: center;
+    
     
 }
 
+footer {
+    background-color: var(--text-color);
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+}
+
+.main-footer {
+    font-family: montserrat, sans-serif; 
+}
+.logo-footer {
+    display: grid;
+    grid-template-columns: 7rem max-content;
+    column-gap: 1.8rem;
+}
+
+.logo-footer img {
+    grid-row: span 2;
+}
 .francois-footer{    
     font-size: 3.7rem;
 }
@@ -438,5 +492,4 @@ input > .link-item-1 {
 
 .text-footer {
     margin-left: 0;
-    
 }
