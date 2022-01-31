@@ -15,7 +15,12 @@
                 <img src="images/logo_resultat.webp" alt="logo de François lolona">
             </div>
             <nav class="main-nav">
-                <ul class="menu">
+                <button class="toggle-menu" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="menu" id="menu" hidden>
                     <li class="menu-item"><a class="menu-link underline" href="#"><abbr title="Experience user" >UX</abbr>Design</a></li>
                     <li class="menu-item"><a class="menu-link underline" href="">Data Viz</a></li>
                     <li class="menu-item"><a class="menu-link underline" href="">Front Dev</a></li>
@@ -45,10 +50,10 @@
                         src="images/Asset_resultat.webp" alt="François Lolona">
                     </figure>
                     <ul class="social-list">
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/Dribbble_resultat.webp" alt="Dribble's logo"></a></li>
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/GitHub-1_resultat.webp" alt="github' logo"></a></li>
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/Instagram-1_resultat.webp" alt="instagram' logo"></a></li>
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/LinkedIn-1_resultat.webp" alt="Linkedin's logo"></a></li>
+                        <li class="social-item"><a href="https://dribbble.com/" target="_blank"><img src="images/Dribbble_resultat.webp" alt="Dribble's logo"></a></li>
+                        <li class="social-item"><a href="https://github.com/" target="_blank"><img src="images/GitHub-1_resultat.webp" alt="github' logo"></a></li>
+                        <li class="social-item"><a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram-1_resultat.webp" alt="instagram' logo"></a></li>
+                        <li class="social-item"><a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn-1_resultat.webp" alt="Linkedin's logo"></a></li>
                     </ul>
                 </div>
             </div>
@@ -154,10 +159,10 @@
                     <p class="sous-tilte">My digital print</p>
                     <h2><span>Let’s</span>Connect</h2>
                     <ul class="social-list">
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/Dribbble_resultat.webp" alt="Dribble's logo"></a></li>
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/GitHub-1_resultat.webp" alt="github' logo"></a></li>
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/Instagram-1_resultat.webp" alt="instagram' logo"></a></li>
-                        <li class="social-item"><a href="#" target="_blank"><img src="images/LinkedIn-1_resultat.webp" alt="Linkedin's logo"></a></li>
+                        <li class="social-item"><a href="https://dribbble.com/" target="_blank"><img src="images/Dribbble_resultat.webp" alt="Dribble's logo"></a></li>
+                        <li class="social-item"><a href="https://github.com/" target="_blank"><img src="images/GitHub-1_resultat.webp" alt="github' logo"></a></li>
+                        <li class="social-item"><a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram-1_resultat.webp" alt="instagram' logo"></a></li>
+                        <li class="social-item"><a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn-1_resultat.webp" alt="Linkedin's logo"></a></li>
                     </ul>
                 </div>
                 <div class="right-part">
@@ -166,8 +171,9 @@
                         <input type="text">
                         <label for="">And your email…</label>
                         <input type="email">
-                        <label for="">Tell me more about your project</label>
-                        <input type="text" name="tell-me" id="tell-me" placeholder="Budget, extra details, deadlines, special requirements…">
+                        <label for="tell-me">Tell me more about your project</label>
+                        <textarea name="name" id="tell-me" placeholder="Budget, extra details, deadlines, special requirements…"></textarea>
+                        <!-- <input type="text" name="tell-me" id="tell-me" placeholder="Budget, extra details, deadlines, special requirements…"> -->
                         <!-- <input type="submit" value="Let's work" class="link-item-1" > -->
                     </form>
                     <button class="btn" type="submit">Let's work!</button>
@@ -186,12 +192,13 @@
             </div> 
             
             <ul class="social-list">
-                    <li class="social-item"><a href="#" target="_blank"><img src="images/Dribbble_resultat.webp" alt="Dribble's logo"></a></li>
-                    <li class="social-item"><a href="#" target="_blank"><img src="images/GitHub-1_resultat.webp" alt="github' logo"></a></li>
-                    <li class="social-item"><a href="#" target="_blank"><img src="images/Instagram-1_resultat.webp" alt="instagram' logo"></a></li>
-                    <li class="social-item"><a href="#" target="_blank"><img src="images/LinkedIn-1_resultat.webp" alt="Linkedin's logo"></a></li>
+                    <li class="social-item"><a href="https://dribbble.com/" target="_blank"><img src="images/Dribbble_resultat.webp" alt="Dribble's logo"></a></li>
+                    <li class="social-item"><a href="https://github.com/" target="_blank"><img src="images/GitHub-1_resultat.webp" alt="github' logo"></a></li>
+                    <li class="social-item"><a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram-1_resultat.webp" alt="instagram' logo"></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/" target="_blank"><img src="images/LinkedIn-1_resultat.webp" alt="Linkedin's logo"></a></li>
             </ul>
         </div>
     </footer>
+    <script src="js/nav.js"></script>
 </body>
 </html>
